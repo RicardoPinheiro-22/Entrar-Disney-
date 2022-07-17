@@ -120,7 +120,7 @@
     font-weight: bold;
 }
 
-.span-1, .span-2 span{
+.span-1 span, .span-2 span{
     cursor: pointer;
     transition: 0.5s;
 }
