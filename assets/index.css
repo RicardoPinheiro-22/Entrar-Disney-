@@ -95,7 +95,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15rem;
+    height: 16.6rem;
     background-color: #000;
     margin-top: 10rem;
 }
@@ -104,11 +104,11 @@
     width: 5rem;
     height: 5rem;
     background-color: transparent;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     margin-bottom: 1.5rem;
 }
 
-.span-1, .span-2, .span-3{
+.span-1, .span-2, .span-3, .span-4{
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
@@ -120,6 +120,15 @@
     font-weight: bold;
 }
 
+.span-1, .span-2 span{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.span-1 span:hover, .span-2 span:hover{
+    color: #fff;
+}
+
 span{
     color: rgb(161, 156, 156);
     background-color: transparent;
@@ -129,6 +138,58 @@ span{
     display: flex;
     flex-direction: row;
     text-align: center;
+}
+
+@media (max-width: 424px){
+    .logo-2{
+        margin-top: 3rem;
+    }
+
+    .copy{
+        height: 19rem;
+    }
+}
+
+@media (max-width: 385px){
+    .copy{
+        height: 22rem;
+    }
+}
+
+@media (max-width: 446px){
+    .span-1, .span-2, .span-3, .span-4{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 424px){
+    .span-1, .span-2, .span-3, .span-4{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .logo-2{
+        margin-top: -0.5rem;
+    }
+}
+
+@media (max-width: 386px){
+    .span-1 span, .span-2 span, .span-3 span , .span-4 span{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 398px){
+    .span-1, .span-2, .span-3, .span-4{
+        font-size: 0.6rem;
+    }
+
+    .logo-2{
+        margin-top: -2.3rem;
+    }
 }
 
 @media (max-width: 350px){
